@@ -1,3 +1,3 @@
-# CSharpUnityCodeStyle
-Unity Code Style Guidelines for C# Programming
-<TBD>
+# Unity Coding Style
+C# Coding Style Guidelines for Unity
+WIP
