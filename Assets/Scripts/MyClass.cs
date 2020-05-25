@@ -19,7 +19,7 @@ using MyNameSpace.Interfaces;
 // sub-spaces are divided by '.' (dot)
 // here "MyNameSpace" is main space and "Classes" is sub-space
 namespace MyNameSpace.Classes
-{
+{ // <- opening parenthesis, new line after namespace name
     /// <summary>
     /// type name starts with Upper case letter
     /// each following word starts with Upper case letter
@@ -28,7 +28,7 @@ namespace MyNameSpace.Classes
     /// </remarks>
     /// </summary>
     public class MyCodeStyle : IMyInterface
-    {
+    { // <- opening parenthesis, new line after type name
         /// <summary>
         /// private variable name starts with "_" (underscore) character
         /// and with lower case letter afterwards
@@ -142,6 +142,8 @@ namespace MyNameSpace.Classes
                 // short code block, but not debugging friendly
                 _myEvent -= 
                     value ?? 
+                    // throwing exception here is not a good practice
+                    // see next block with better example
                     throw new NullReferenceException("Null value cannot be accepted");
                 
                 // alternative: exception throwing code blocked wrapped with parenthesis to allow better debugging
@@ -187,5 +189,5 @@ namespace MyNameSpace.Classes
 
             return str1 + str2;
         }
-    }
-}
+    } // <- closing parenthesis, new line after last type code line
+} // <- closing parenthesis, new line after last space code line

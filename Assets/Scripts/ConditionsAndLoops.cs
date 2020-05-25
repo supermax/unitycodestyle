@@ -9,7 +9,10 @@
 // using (import) of other namespaces will be wrapped with region "Using"
 #region Using
 using System;
+using System.Collections.Generic;
 using MyNameSpace.Enums;
+using UnityEngine;
+
 #endregion
 
 // types are defined within the scope of namespace
@@ -117,5 +120,30 @@ namespace MyNameSpace.Conditions
                 // alternative: array[i] = default; // no need to specify (T)
             } // <- closing parenthesis, new line after last loop code line
         } // <- closing parenthesis, new line after last method code line
+
+        /// <summary>
+        /// function name starts with Upper case letter
+        /// each following word starts with Upper case letter 
+        /// </summary>
+        /// <param name="list">
+        /// parameter name starts with Upper case letter
+        /// each following word starts with Upper case letter
+        /// </param>
+        /// <typeparam name="T">
+        /// generic type parameter name starts with Upper case letter
+        /// each following word starts with Upper case letter
+        /// in case of single parameter, single letter 'T' can be used
+        /// </typeparam>
+        public static void Print<T>(this IEnumerable<T> list)
+        {
+            // disposable resources will be defined within scope of 'using' statement
+            using (var e = list.GetEnumerator())
+            { // <- opening parenthesis, new line after 'using' definition line
+                while (e.MoveNext())
+                { // <- opening parenthesis, new line after 'while' loop definition line
+                    Debug.Log(e.Current);
+                } // <- closing parenthesis, new line after last loop code line
+            } // <- closing parenthesis, new line after last 'using' code line
+        }
     }
 }
