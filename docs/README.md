@@ -1,9 +1,9 @@
 ## C# Coding Style for Unity
 
- - [Enums](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/MyEnum.cs.html)  
- - [Classes](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/MyClass.cs.html)
- - [Scripts](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/MyScript.cs.html)
- - [Structs](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/MyStruct.cs.html)
- - [Delegates](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/Delegates.cs.html)
- - [Interfaces](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/IMyInterface.cs.html)
- - [Conditions and Loops](https://s3-us-west-1.amazonaws.com/blog.supermaxim.com/docs/UnityCodeStyle/ConditionsAndLoops.cs.html)
+ - [Enums](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html)  
+ - [Classes](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html/MyClass.cs.html)
+ - [Scripts](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html/MyScript.cs.html)
+ - [Structs](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html/MyStruct.cs.html)
+ - [Delegates](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html/Delegates.cs.html)
+ - [Interfaces](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html/IMyInterface.cs.html)
+ - [Conditions and Loops](https://supermax.github.io/UnityCodeStyle/MyEnum.cs.html/ConditionsAndLoops.cs.html)
