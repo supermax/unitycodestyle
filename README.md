@@ -10,4 +10,4 @@
 
 ***
 
-[Project License](https://github.com/supermax/UnityCodeStyle/wiki/LICENSE.md)
+[Project License](https://supermax.github.io/UnityCodeStyle/LICENSE.md)
