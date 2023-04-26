@@ -15,10 +15,10 @@ namespace MyNameSpace.Delegates
 {
     /// <summary>
     /// delegate name starts with Upper case letter
-    /// each following word starts with Upper case letter 
+    /// each following word starts with Upper case letter
     /// </summary>
     /// <param name="value">
-    /// parameter name starts with Upper case letter
+    /// parameter name starts with lower case letter
     /// each following word starts with Upper case letter
     /// </param>
     public delegate void MyDelegate(int value);

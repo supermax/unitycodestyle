@@ -6,7 +6,7 @@
         * Debuggable - code is easy to debug (IDE friendly)
  ******************************************************************************/
 
-// using (imports) of other namespaces will be wrapped with region "Using" 
+// using (imports) of other namespaces will be wrapped with region "Using"
 #region Using
 using System;
 using MyNameSpace.Delegates;
@@ -60,10 +60,10 @@ namespace MyNameSpace.Classes
             // if public setter is not necessary, private or protected will be used here
             private set
             { // <- opening parenthesis, new line after set/get instruction
-                
-                // conditional operator '?' usage 
+
+                // conditional operator '?' usage
                 _myInt = value >= 0 ? value : 0;
-                
+
                 // similar code for easier debugging and future extension
                 // with parenthesis
                 if (value >= 0)
@@ -74,7 +74,7 @@ namespace MyNameSpace.Classes
                 {
                     _myInt = 0;
                 }
-                
+
                 // similar code for easier debugging and future extension
                 // without parenthesis
                 if (value >= 0)
@@ -90,7 +90,7 @@ namespace MyNameSpace.Classes
         /// <remarks>
         /// this is simplified style of declaration,
         /// in case no logic in adder/remover is required
-        /// </remarks> 
+        /// </remarks>
         /// </summary>
         public event MyDelegate MyEvent;
 
@@ -100,31 +100,31 @@ namespace MyNameSpace.Classes
         /// each following word starts with Upper case letter
         /// </summary>
         private event MyDelegate _myEvent;
-        
+
         // alternative syntax to prevent null ref. exc.
         // private event MyDelegate _myEvent = delegate(int value) {  };
-        
+
         /// <summary>
         /// public event name starts with Upper case letter
         /// each following word starts with Upper case letter
         /// <remarks>
         /// this style uses expression body style with '=>' operator
         /// code block 'wraps' access for '_myEvent'
-        /// </remarks> 
+        /// </remarks>
         /// </summary>
         public event MyDelegate MyEventWrapper1
         {
             add => _myEvent += value;
             remove => _myEvent -= value;
         }
-        
+
         /// <summary>
         /// public event name starts with Upper case letter
         /// each following word starts with Upper case letter
         /// <remarks>
         /// this style uses parenthesis
         /// code block 'wraps' access for '_myEvent' and add logic code
-        /// </remarks> 
+        /// </remarks>
         /// </summary>
         public event MyDelegate MyEventWrapper2
         {
@@ -140,12 +140,12 @@ namespace MyNameSpace.Classes
             remove
             {
                 // short code block, but not debugging friendly
-                _myEvent -= 
-                    value ?? 
+                _myEvent -=
+                    value ??
                     // throwing exception here is not a good practice
                     // see next block with better example
                     throw new NullReferenceException("Null value cannot be accepted");
-                
+
                 // alternative: exception throwing code blocked wrapped with parenthesis to allow better debugging
                 if (value == null)
                 {
@@ -160,7 +160,7 @@ namespace MyNameSpace.Classes
         /// each following word starts with Upper case letter
         /// </summary>
         /// <param name="numericValue">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// </param>
         public void MyMethod(int numericValue)
@@ -175,7 +175,7 @@ namespace MyNameSpace.Classes
         /// each following word starts with Upper case letter
         /// </summary>
         /// <param name="worldName">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// </param>
         /// <returns></returns>
@@ -183,7 +183,7 @@ namespace MyNameSpace.Classes
         {
             // new way: string interpolation with '$' operator (predicate)
             var str1 = $"Hello {worldName}!";
-            
+
             // old way: use string.Format(...) function to interpolate strings
             var str2 = string.Format("Hello {0}!", worldName);
 

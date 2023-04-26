@@ -12,7 +12,7 @@
 // sub-spaces are divided by '.' (dot)
 // here "MyNameSpace" is main space and "Structs" is sub-space
 namespace MyNameSpace.Structs
-{    
+{
     /// <summary>
     /// type name starts with Upper case letter
     /// each following word starts with Upper Case letter
@@ -45,7 +45,7 @@ namespace MyNameSpace.Structs
         /// each following word starts with Upper case letter
         /// </summary>
         /// <param name="myNumber">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// <remarks>
         /// NOTE pay attention to letter case difference between 'MyNumber' variable and 'myNumber' parameter
@@ -54,10 +54,10 @@ namespace MyNameSpace.Structs
         public MyStruct(double myNumber)
         { // <- opening parenthesis, new line after method name
             MyNumber = myNumber;
-            
+
             // function scope const variable name starts with lower case letter
             // each following word starts with Upper case letter
-            // NOTE variable/const definition is close to it's usage scope 
+            // NOTE variable/const definition is close to it's usage scope
             const bool isInit = true;
             IsInit = isInit;
         } // <- closing parenthesis, new line after last method code line

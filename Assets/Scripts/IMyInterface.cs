@@ -13,7 +13,7 @@ using MyNameSpace.Delegates;
 
 // types are defined within the scope of namespace
 // space name starts with Upper case letter
-// each following word starts with upper Case letter
+// each following word starts with Upper Case letter
 // sub-spaces are divided by '.' (dot)
 // here "MyNameSpace" is main space and "Interfaces" is sub-space
 namespace MyNameSpace.Interfaces
@@ -32,7 +32,7 @@ namespace MyNameSpace.Interfaces
         /// each following word starts with Upper case letter
         /// </summary>
         event MyDelegate MyEvent;
-        
+
         /// <summary>
         /// property name starts with Upper case letter
         /// each following word starts with Upper case letter
@@ -41,7 +41,7 @@ namespace MyNameSpace.Interfaces
         /// </remarks>
         /// </summary>
         int MyIntProperty { get; }
-        
+
         /// <summary>
         /// method name starts with Upper case letter
         /// each following word starts with Upper case letter

@@ -12,16 +12,18 @@
 </head>
 <body bgcolor="#1e1e1e">
 <table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
-<tr><td><center>
+<tr>
+    <td><a href="https://supermax.github.io/unitycodestyle">Home</a></td>
+    <td><center>
 <font face="Arial, Helvetica" color="#000000">
 MyScript.cs</font>
 </center></td></tr></table>
-<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">/****************************************************************************** 
-<a name="l2"><span class="ln">2    </span></a>    Style Guidelines: 
-<a name="l3"><span class="ln">3    </span></a>        * Readability - code is easy to read and to understand 
-<a name="l4"><span class="ln">4    </span></a>        * Standardisation - all team members are aligned with same code style 
-<a name="l5"><span class="ln">5    </span></a>        * Self-descriptive code - code is easy to understand without comments 
-<a name="l6"><span class="ln">6    </span></a>        * Debuggable - code is easy to debug (IDE friendly) 
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">/******************************************************************************
+<a name="l2"><span class="ln">2    </span></a>    Style Guidelines:
+<a name="l3"><span class="ln">3    </span></a>        * Readability - code is easy to read and to understand
+<a name="l4"><span class="ln">4    </span></a>        * Standardisation - all team members are aligned with same code style
+<a name="l5"><span class="ln">5    </span></a>        * Self-descriptive code - code is easy to understand without comments
+<a name="l6"><span class="ln">6    </span></a>        * Debuggable - code is easy to debug (IDE friendly)
 <a name="l7"><span class="ln">7    </span></a> ******************************************************************************/</span>
 <a name="l8"><span class="ln">8    </span></a>
 <a name="l9"><span class="ln">9    </span></a><span class="s0">// using (imports) of other namespaces will be wrapped with region &quot;Using&quot;</span>
@@ -85,7 +87,7 @@ MyScript.cs</font>
 <a name="l67"><span class="ln">67   </span></a>
 <a name="l68"><span class="ln">68   </span></a>            <span class="s0">// opt-1: start 'MyCoroutine' directly and instantiate list in same line</span>
 <a name="l69"><span class="ln">69   </span></a>            <span class="s1">StartCoroutine(MyCoroutine(</span><span class="s2">new </span><span class="s1">List&lt;GameObject&gt;{gameObject}));</span>
-<a name="l70"><span class="ln">70   </span></a>            
+<a name="l70"><span class="ln">70   </span></a>
 <a name="l71"><span class="ln">71   </span></a>            <span class="s0">// opt-2: capture list in local variable for debugging purposes</span>
 <a name="l72"><span class="ln">72   </span></a>            <span class="s1">var gameObjects = </span><span class="s2">new </span><span class="s1">List&lt;GameObject&gt;{gameObject};</span>
 <a name="l73"><span class="ln">73   </span></a>            <span class="s0">// start 'MyCoroutine' and capture 'StartCoroutine' result in class variable</span>
@@ -113,7 +115,7 @@ MyScript.cs</font>
 <a name="l95"><span class="ln">95   </span></a>        <span class="s0">/// each following word starts with Upper case letter</span>
 <a name="l96"><span class="ln">96   </span></a>        <span class="s0">/// &lt;/summary&gt;</span>
 <a name="l97"><span class="ln">97   </span></a>        <span class="s0">/// &lt;param name=&quot;gameObjects&quot;&gt;</span>
-<a name="l98"><span class="ln">98   </span></a>        <span class="s0">/// parameter name starts with Upper case letter</span>
+<a name="l98"><span class="ln">98   </span></a>        <span class="s0">/// parameter name starts with lower case letter</span>
 <a name="l99"><span class="ln">99   </span></a>        <span class="s0">/// each following word starts with Upper case letter</span>
 <a name="l100"><span class="ln">100  </span></a>        <span class="s0">/// &lt;/param&gt;</span>
 <a name="l101"><span class="ln">101  </span></a>        <span class="s0">/// &lt;remarks&gt;</span>

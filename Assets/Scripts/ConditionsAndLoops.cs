@@ -39,11 +39,11 @@ namespace MyNameSpace.Conditions
         /// boolean functions/properties usually start with "Is" word
         /// </remarks>
         /// <param name="myEnum">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// </param>
         /// <param name="enumMember">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// </param>
         /// <returns>
@@ -52,7 +52,7 @@ namespace MyNameSpace.Conditions
         /// <exception cref="ArgumentOutOfRangeException">
         /// exception(s) thrown in function are specified in it's comment header
         /// </exception>
-        public static bool IsSame(this MyEnum myEnum, MyEnum enumMember)
+        public static bool IsSame(this myEnum myEnum, myEnum enumMember)
         {
             // since 'result' is initialized with 'false' value, 'var' can be used here
             var result = false;
@@ -64,14 +64,14 @@ namespace MyNameSpace.Conditions
                         result = true;
                     }
                     break;
-                
+
                 case MyEnum.EnumMember2:
                     if (enumMember == MyEnum.EnumMember2)
                     {
                         result = true;
                     }
                     break;
-                
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(myEnum), myEnum, null);
             }
@@ -80,10 +80,10 @@ namespace MyNameSpace.Conditions
 
         /// <summary>
         /// function name starts with Upper case letter
-        /// each following word starts with Upper case letter
+        /// each following word starts with lower case letter
         /// </summary>
         /// <param name="string">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// if parameter name collides with type name(s) '@' character predicate can be used
         /// </param>
@@ -93,22 +93,22 @@ namespace MyNameSpace.Conditions
         public static bool IsNullOrEmpty(this string @string)
         {
             // 'var' can be used here instead of 'bool' since it is clear
-            // what value type is returned from 'string.IsNullOrEmpty(@string);' 
+            // what value type is returned from 'string.IsNullOrEmpty(@string);'
             var result = string.IsNullOrEmpty(@string);
             // result variable is used here to capture the value for better debugging experience
             return result;
         }
 
         /// <summary>
-        /// function name starts with Upper case letter
-        /// each following word starts with Upper case letter 
+        /// function name starts with lower case letter
+        /// each following word starts with Upper case letter
         /// </summary>
         /// <param name="array">
-        /// parameter name starts with Upper case letter
-        /// each following word starts with Upper case letter 
+        /// parameter name starts with lower case letter
+        /// each following word starts with Upper case letter
         /// </param>
         /// <typeparam name="T">
-        /// generic type parameter name starts with Upper case letter
+        /// generic type parameter name starts with letter 'T' and then 1st word starts with Upper case letter
         /// each following word starts with Upper case letter
         /// in case of single parameter, single letter 'T' can be used
         /// </typeparam>
@@ -123,14 +123,14 @@ namespace MyNameSpace.Conditions
 
         /// <summary>
         /// function name starts with Upper case letter
-        /// each following word starts with Upper case letter 
+        /// each following word starts with Upper case letter
         /// </summary>
         /// <param name="list">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// </param>
         /// <typeparam name="T">
-        /// generic type parameter name starts with Upper case letter
+        /// generic type parameter name starts with letter 'T' and then 1st word starts with Upper case letter
         /// each following word starts with Upper case letter
         /// in case of single parameter, single letter 'T' can be used
         /// </typeparam>

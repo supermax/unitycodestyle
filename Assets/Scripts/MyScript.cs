@@ -15,7 +15,7 @@ using UnityEngine;
 
 // types are defined within the scope of namespace
 // space name starts with Upper case letter
-// each following word starts with upper Case letter
+// each following word starts with Upper Case letter
 // sub-spaces are divided by '.' (dot)
 // here "MyNameSpace" is main space and "Scripts" is sub-space
 namespace MyNameSpace.Scripts
@@ -42,7 +42,7 @@ namespace MyNameSpace.Scripts
         /// naming convention -- similar to private variables
         ///  </summary>
         /// <remarks>
-        /// public property 'MyColor' will allow access to '_myColor' value from other types 
+        /// public property 'MyColor' will allow access to '_myColor' value from other types
         /// </remarks>
         [SerializeField]
         private Color _myColor;
@@ -67,7 +67,7 @@ namespace MyNameSpace.Scripts
 
             // opt-1: start 'MyCoroutine' directly and instantiate list in same line
             StartCoroutine(MyCoroutine(new List<GameObject>{gameObject}));
-            
+
             // opt-2: capture list in local variable for debugging purposes
             var gameObjects = new List<GameObject>{gameObject};
             // start 'MyCoroutine' and capture 'StartCoroutine' result in class variable
@@ -76,7 +76,7 @@ namespace MyNameSpace.Scripts
 
         /// <summary>
         /// method name starts with Upper case letter
-        /// each following word starts with Upper case letter 
+        /// each following word starts with Upper case letter
         /// </summary>
         public void StopMyCoroutine()
         {
@@ -95,7 +95,7 @@ namespace MyNameSpace.Scripts
         /// each following word starts with Upper case letter
         /// </summary>
         /// <param name="gameObjects">
-        /// parameter name starts with Upper case letter
+        /// parameter name starts with lower case letter
         /// each following word starts with Upper case letter
         /// </param>
         /// <remarks>
